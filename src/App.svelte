@@ -1,19 +1,9 @@
 <script lang="ts">
-    //const lucky: string = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
     let luck: boolean = false;
 
-    // async function getDoujin(id: string) {
-    //     let url: string = "https://nhentai.net/g/" + id + "/";
-    //     const response: Response = await fetch(url, { mode: "no-cors" });
-    //     console.log(response);
-    // }
-
     function getLucky() {
-        //window.location.replace(lucky);
         luck = true;
     }
-
-    //getDoujin("177013");
 </script>
 
 <main>
@@ -29,6 +19,14 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
         />
+        <br />
+        <a href="https://nhentai.net/g/177013/"
+            ><img
+                src="https://www.nme.com/wp-content/uploads/2021/07/RickAstley2021.jpg"
+                alt="Rick Astley"
+                height="200px"
+            /></a
+        >
     {:else}
         <button on:click={getLucky}>Click Here</button>
     {/if}
